@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+    <h5>In God We Trust</h5>
+    <h1>Gestión de Usuarios</h1>
+
+    <button id= "getUsers">
+        GET Usuarios 
+    </button>
+    <hr>
+    <form id= "usersForm"></form>
+    <input type="text" id ="nUser" placeholder=" Ingrese User Name">
+    <input type="text" id ="nName"placeholder=" Ingrese Nombre">
+    <input type="text" id ="nLstName" placeholder=" Ingrese Apellido">
+    <input type="text" id ="nEmail"placeholder=" Ingrese Email">
+    <input type="text" id ="nRol"placeholder=" Ingrese rol">
+    <input type="text" id ="nTelefono"placeholder=" Ingrese Telefono">
+    <input type="text" id ="nEstatus"placeholder=" Ingrese Estaus">
+    <button type ="submit">POST Usuarios</button>
+
+   <table>
+       <thead>
+           <tr>
+               <th>ID</th>
+               <th>User Name</th>
+               <th>Nombre</th>
+               <th>Apellido</th>
+               <th>User Email</th>
+               <th>Rol</th>
+               <th>Telefono</th>
+               <th>Estatus</th>
+               <th> Acciones</th>
+       </thead>
+       <tbody>
+        
+        <TR>
+            <TD>
+            <button class="update-button">UPDATE</button>
+            <button class="delete-button">DELETE</button>
+            </TD>       
+        </TR>
+        </tbody>
+   </table>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+
+   </script>
+    <script src="/app.js" charset="utf-8"></script>
+
+</body>
+</html>
